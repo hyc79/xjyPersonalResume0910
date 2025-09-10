@@ -50,55 +50,65 @@
         .section p {
             margin: 5px 0;
         }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 10px;
+            display: block;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-                <div>
-                    <h1>徐嘉怡</h1>
-                    <p>个人简历</p>
-                </div>
-                <img src="C:\Users\J3-211\Desktop\xjy\1.jpg" alt="照片"
-                    style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;">
+            <img src="1.jpg" alt="照片" class="photo">
+            <h1>徐嘉怡的个人简历</h1>
+            <div class="info">
+                <p>性别：女</p>
+                <p>年龄：19</p>
+                <p>家乡：广东惠州</p>
+                <p>电话：123-456-7890</p>
+                <p>邮箱：xjy@example.com</p>
+                <p>地址：中国上海市</p>
             </div>
         </header>
 
-        <div class="info">
-            <p><strong>性别：</strong>女</p>
-            <p><strong>年龄：</strong>19</p>
-            <p><strong>家乡：</strong>广东惠州</p>
-            <p><strong>联系方式：</strong>15118936652</p>
-            <p><strong>邮箱：</strong>524681045@qq.com</p>
-        </div>
-
         <div class="section">
             <h2>教育背景</h2>
-            <p>广东科学技术职业学院</p>
-        </div>
-
-        <div class="section">
-            <h2>职业</h2>
-            <p>大模型应用班</p>
+            <p><strong>广东科学技术职业学院</strong> - 大模型应用班</p>
         </div>
 
         <div class="section">
             <h2>技术特长</h2>
-            <p>数学建模</p>
-            <p>Python</p>
+            <ul>
+                <li>数学建模</li>
+                <li>Python</li>
+            </ul>
         </div>
 
         <div class="section">
             <h2>竞赛经历</h2>
-            <p>广东红比赛</p>
+            <p><strong>广东红比赛</strong></p>
         </div>
 
         <div class="section">
-            <h2>兴趣爱好</h2>
-            <p>阅读</p>
-            <p>打羽毛球</p>
+            <h2>兴趣</h2>
+            <ul>
+                <li>阅读</li>
+                <li>打羽毛球</li>
+            </ul>
         </div>
     </div>
 </body>
